@@ -1,0 +1,8 @@
+# Chrome 浏览器数据
+.browser_data/
+__pycache__/
+venv/
+*.pyc
+*.pyo
+data/logs/
+agent.pid
