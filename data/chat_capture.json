@@ -1,0 +1,390 @@
+{
+  "apis": [
+    {
+      "method": "POST",
+      "url": "https://apm-fe.zhipin.com/wapi/zpApm/actionLog/fe/common.json",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "https://www.zhipin.com/",
+        "sec-ch-ua": "\"Google Chrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+        "Report-Source": "apmsdk-ajax-v2.0.2",
+        "sec-ch-ua-mobile": "?0",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "TraceId": "F-mqcw5jy7wlqh584kkf",
+        "Content-Type": "application/json;charset=UTF-8"
+      },
+      "postData": "{\"clientInfo\":{\"os\":\"Windows\",\"version\":\"10\",\"browser\":\"Chrome\",\"did\":\"mqbd3gznw4nifC8Fra\",\"model\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\",\"screen\":\"{\\\"width\\\":2560,\\\"height\\\":1440}\",\"network\":\"{\\\"networkInfo\\\":\\\"{\\\\\\\"effectiveType\\\\\\\":\\\\\\\"4g\\\\\\\",\\\\\\\"downlink\\\\\\\":1.6,\\\\\\\"rtt\\\\\\\":100,\\\\\\\"saveData\\\\\\\":false}\\\",\\\"networkType\\\":\\\"4g\\\",\\\"operator\\\":\\\"\\\"}\"},\"items\":[{\"action\":\"route_abnormal\",\"p\":\"{\\\"appKey\\\":\\\"ObsSRskiryhn60pf\\"
+    },
+    {
+      "method": "GET",
+      "url": "https://apm-fe.zhipin.com/wapi/zpApm/httpMetrics/getConfig?appKey=ObsSRskiryhn60pf",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "https://www.zhipin.com/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+        "Content-Type": "application/json",
+        "sec-ch-ua-mobile": "?0"
+      }
+    },
+    {
+      "method": "POST",
+      "url": "https://www.zhipin.com/wapi/zppassport/set/zpToken",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "https://www.zhipin.com/",
+        "sec-ch-ua": "\"Google Chrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "X-Requested-With": "XMLHttpRequest",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "Accept": "*/*",
+        "traceId": "F-0019ec2f8e4c3aCapPNYfJ",
+        "token": "hhc7ZJOBMhxqRcVs"
+      }
+    },
+    {
+      "method": "GET",
+      "url": "https://www.zhipin.com/wapi/zpgeek/webtopbanner/query.json",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "https://www.zhipin.com/",
+        "sec-ch-ua": "\"Google Chrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "zp_token": "V2R9snFOD521lqVtRuxxwRISmw7DrRxSs~|R9snFOD521lqVtRuxxwRISmw7Drfxy8~",
+        "X-Requested-With": "XMLHttpRequest",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "Accept": "*/*",
+        "traceId": "F-0019ec2f8e4c5AUxjw4cl4",
+        "token": "hhc7ZJOBMhxqRcVs"
+      }
+    },
+    {
+      "method": "POST",
+      "url": "https://www.zhipin.com/wapi/zpCommon/toggle/all",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "https://www.zhipin.com/",
+        "sec-ch-ua": "\"Google Chrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "zp_token": "V2R9snFOD521lqVtRuxxwRISmw7DrRxSs~|R9snFOD521lqVtRuxxwRISmw7Drfxy8~",
+        "X-Requested-With": "XMLHttpRequest",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "Accept": "application/json, text/javascript, */*; q=0.01",
+        "traceId": "F-0019ec2f8e4c5vUpIodHFU",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "token": "hhc7ZJOBMhxqRcVs"
+      },
+      "postData": "system=9E2145704D3D49648DD85D6DDAC1CF0D"
+    },
+    {
+      "method": "GET",
+      "url": "https://www.zhipin.com/wapi/zpgeek/recommend/conditions.json",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "https://www.zhipin.com/",
+        "sec-ch-ua": "\"Google Chrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "zp_token": "V2R9snFOD521lqVtRuxxwRISmw7DrRxSs~|R9snFOD521lqVtRuxxwRISmw7Drfxy8~",
+        "X-Requested-With": "XMLHttpRequest",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "Accept": "application/json, text/javascript, */*; q=0.01",
+        "traceId": "F-0019ec2f8e4c6KaQCI5LBf",
+        "token": "hhc7ZJOBMhxqRcVs"
+      }
+    },
+    {
+      "method": "GET",
+      "url": "https://www.zhipin.com/wapi/zpuser/wap/getSecurityGuideV1",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "https://www.zhipin.com/",
+        "sec-ch-ua": "\"Google Chrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "zp_token": "V2R9snFOD521lqVtRuxxwRISmw7DrRxSs~|R9snFOD521lqVtRuxxwRISmw7Drfxy8~",
+        "X-Requested-With": "XMLHttpRequest",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "Accept": "*/*",
+        "traceId": "F-0019ec2f8e4c6bRld8WhWe",
+        "token": "hhc7ZJOBMhxqRcVs"
+      }
+    },
+    {
+      "method": "GET",
+      "url": "https://www.zhipin.com/wapi/zpgeek/collection/popup/window",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "https://www.zhipin.com/",
+        "sec-ch-ua": "\"Google Chrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "zp_token": "V2R9snFOD521lqVtRuxxwRISmw7DrRxSs~|R9snFOD521lqVtRuxxwRISmw7Drfxy8~",
+        "X-Requested-With": "XMLHttpRequest",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "Accept": "*/*",
+        "traceId": "F-0019ec2f8e4c7VOUFEFqfT",
+        "token": "hhc7ZJOBMhxqRcVs"
+      }
+    },
+    {
+      "method": "GET",
+      "url": "https://www.zhipin.com/wapi/certification/violate/rule/prompt/dialog",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "https://www.zhipin.com/",
+        "sec-ch-ua": "\"Google Chrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "zp_token": "V2R9snFOD521lqVtRuxxwRISmw7DrRxSs~|R9snFOD521lqVtRuxxwRISmw7Drfxy8~",
+        "X-Requested-With": "XMLHttpRequest",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "Accept": "*/*",
+        "traceId": "F-0019ec2f8e4c7adhvZOEj5",
+        "token": "hhc7ZJOBMhxqRcVs"
+      }
+    },
+    {
+      "method": "POST",
+      "url": "https://shink.zhipin.com/wapi/dapCommon/json",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "https://www.zhipin.com/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+        "Content-Type": "text/plain;charset=UTF-8",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "postData": "{\"distinct_id\":\"19ebd75d1c7e26-03354e9748451c-26061051-3686400-19ebd75d1c83944\",\"_reqid\":\"19ec2f8e4ce1274-0595f7268edab4c-26061051-3686400-19ec2f8e4cf5443\",\"_topic\":\"zhipin_geek_pc65A80B97CB4C27FA8F\",\"_v\":\"1.0.0\",\"_lib\":\"js\",\"_lib_version\":\"2.2.16\",\"app_name\":\"zhipin_web_geek_jsp\",\"_ts\":1781387551952,\"events\":[{\"timezone_offset\":-480,\"screen_height\":1440,\"screen_width\":2560,\"viewport_height\":1127,\"viewport_width\":1274,\"event_ts\":1781387551950,\"event_no\":1781387551950,\"__a\":\"95615399.1781295076.1"
+    },
+    {
+      "method": "GET",
+      "url": "https://www.zhipin.com/wapi/zpgeek/recommend/job/list.json?expectId=e86f819f05f08a140H1729W_GVZX&pk=cpc_job_index&sortType=1&page=1&salary=&payType=&degree=&experience=&stage=&scale=&districtCode=&bus",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "https://www.zhipin.com/",
+        "sec-ch-ua": "\"Google Chrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "zp_token": "V2R9snFOD521lqVtRuxxwRISmw7Drfxy8~|R9snFOD521lqVtRuxxwRISmw7DrSzS4~",
+        "X-Requested-With": "XMLHttpRequest",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "Accept": "application/json, text/javascript, */*; q=0.01",
+        "traceId": "F-0019ec2f8e5a75agWQlxlA",
+        "token": "hhc7ZJOBMhxqRcVs"
+      }
+    },
+    {
+      "method": "GET",
+      "url": "https://www.zhipin.com/wapi/zpgeek/recommend/job/list.json?expectId=e86f819f05f08a140H1729W_GVZX&pk=cpc_job_index&sortType=2&page=1&salary=&payType=&degree=&experience=&stage=&scale=&districtCode=&bus",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "https://www.zhipin.com/",
+        "sec-ch-ua": "\"Google Chrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "zp_token": "V2R9snFOD521lqVtRuxxwRISmw7Drfxy8~|R9snFOD521lqVtRuxxwRISmw7DrSzS4~",
+        "X-Requested-With": "XMLHttpRequest",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "Accept": "application/json, text/javascript, */*; q=0.01",
+        "traceId": "F-0019ec2f8e798G1jlGa33n",
+        "token": "hhc7ZJOBMhxqRcVs"
+      }
+    },
+    {
+      "method": "GET",
+      "url": "https://www.zhipin.com/wapi/zpchat/notify/setting/get",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "https://www.zhipin.com/",
+        "sec-ch-ua": "\"Google Chrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "zp_token": "V2R9snFOD521lqVtRuxxwRISmw7Drfxy8~|R9snFOD521lqVtRuxxwRISmw7DrSzS4~",
+        "X-Requested-With": "XMLHttpRequest",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "Accept": "*/*",
+        "traceId": "F-0019ec2f8e978bFhadQRMe",
+        "token": "hhc7ZJOBMhxqRcVs"
+      }
+    },
+    {
+      "method": "GET",
+      "url": "https://www.zhipin.com/wapi/zpitem/geek/vip/info?",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "https://www.zhipin.com/",
+        "sec-ch-ua": "\"Google Chrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "zp_token": "V2R9snFOD521lqVtRuxxwRISmw7Drfxy8~|R9snFOD521lqVtRuxxwRISmw7DrSzS4~",
+        "X-Requested-With": "XMLHttpRequest",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "traceId": "F-f8e98295n6efNjug"
+      }
+    },
+    {
+      "method": "GET",
+      "url": "https://www.zhipin.com/wapi/zpuser/h5/account/getStatus?",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "https://www.zhipin.com/",
+        "sec-ch-ua": "\"Google Chrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "zp_token": "V2R9snFOD521lqVtRuxxwRISmw7Drfxy8~|R9snFOD521lqVtRuxxwRISmw7DrSzS4~",
+        "X-Requested-With": "XMLHttpRequest",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "traceId": "F-f8e982tiERaKi4Mm"
+      }
+    },
+    {
+      "method": "GET",
+      "url": "https://www.zhipin.com/wapi/zpwukong/web/employer/task/showGeekEntry?",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "https://www.zhipin.com/",
+        "sec-ch-ua": "\"Google Chrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "zp_token": "V2R9snFOD521lqVtRuxxwRISmw7Drfxy8~|R9snFOD521lqVtRuxxwRISmw7DrSzS4~",
+        "X-Requested-With": "XMLHttpRequest",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "traceId": "F-f8e982pdD0jYjNM1"
+      }
+    },
+    {
+      "method": "GET",
+      "url": "https://www.zhipin.com/wapi/zpuser/wap/ad/getPcActivity",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "https://www.zhipin.com/",
+        "sec-ch-ua": "\"Google Chrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "zp_token": "V2R9snFOD521lqVtRuxxwRISmw7Drfxy8~|R9snFOD521lqVtRuxxwRISmw7DrSzS4~",
+        "X-Requested-With": "XMLHttpRequest",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "Accept": "*/*",
+        "traceId": "F-0019ec2f8e9937yUFaLkNu",
+        "token": "hhc7ZJOBMhxqRcVs"
+      }
+    },
+    {
+      "method": "GET",
+      "url": "https://www.zhipin.com/wapi/zpgeek/agreement/update/tip.json",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "https://www.zhipin.com/",
+        "sec-ch-ua": "\"Google Chrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "zp_token": "V2R9snFOD521lqVtRuxxwRISmw7Drfxy8~|R9snFOD521lqVtRuxxwRISmw7DrSzS4~",
+        "X-Requested-With": "XMLHttpRequest",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "Accept": "application/json, text/javascript, */*; q=0.01",
+        "traceId": "F-0019ec2f8e994Aaxf7DlfH",
+        "token": "hhc7ZJOBMhxqRcVs"
+      }
+    },
+    {
+      "method": "GET",
+      "url": "https://www.zhipin.com/wapi/zpgeek/resume/parser/querybar.json",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "https://www.zhipin.com/",
+        "sec-ch-ua": "\"Google Chrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "zp_token": "V2R9snFOD521lqVtRuxxwRISmw7Drfxy8~|R9snFOD521lqVtRuxxwRISmw7DrSzS4~",
+        "X-Requested-With": "XMLHttpRequest",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "Accept": "application/json, text/javascript, */*; q=0.01",
+        "traceId": "F-0019ec2f8e996D1oBbZGiD",
+        "token": "hhc7ZJOBMhxqRcVs"
+      }
+    },
+    {
+      "method": "GET",
+      "url": "https://www.zhipin.com/wapi/zpgeek/common/data/city/site.json",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "https://www.zhipin.com/",
+        "sec-ch-ua": "\"Google Chrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "zp_token": "V2R9snFOD521lqVtRuxxwRISmw7Drfxy8~|R9snFOD521lqVtRuxxwRISmw7DrSzS4~",
+        "X-Requested-With": "XMLHttpRequest",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "Accept": "application/json, text/javascript, */*; q=0.01",
+        "traceId": "F-0019ec2f8e996RNtszRvKw",
+        "token": "hhc7ZJOBMhxqRcVs"
+      }
+    },
+    {
+      "method": "GET",
+      "url": "https://www.zhipin.com/wapi/zpCommon/data/industry.json",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "https://www.zhipin.com/",
+        "sec-ch-ua": "\"Google Chrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "zp_token": "V2R9snFOD521lqVtRuxxwRISmw7Drfxy8~|R9snFOD521lqVtRuxxwRISmw7DrSzS4~",
+        "X-Requested-With": "XMLHttpRequest",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "Accept": "application/json, text/javascript, */*; q=0.01",
+        "traceId": "F-0019ec2f8e9a3X0SwvUcqg",
+        "token": "hhc7ZJOBMhxqRcVs"
+      }
+    },
+    {
+      "method": "GET",
+      "url": "https://www.zhipin.com/wapi/zpCommon/data/city.json",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "https://www.zhipin.com/",
+        "sec-ch-ua": "\"Google Chrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "zp_token": "V2R9snFOD521lqVtRuxxwRISmw7Drfxy8~|R9snFOD521lqVtRuxxwRISmw7DrSzS4~",
+        "X-Requested-With": "XMLHttpRequest",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "Accept": "application/json, text/javascript, */*; q=0.01",
+        "traceId": "F-0019ec2f8e9a409hAbuaIB",
+        "token": "hhc7ZJOBMhxqRcVs"
+      }
+    },
+    {
+      "method": "GET",
+      "url": "https://www.zhipin.com/wapi/zpCommon/data/getCityShowPosition?cityCode=101190500",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "https://www.zhipin.com/",
+        "sec-ch-ua": "\"Google Chrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "zp_token": "V2R9snFOD521lqVtRuxxwRISmw7Drfxy8~|R9snFOD521lqVtRuxxwRISmw7DrSzS4~",
+        "X-Requested-With": "XMLHttpRequest",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "Accept": "application/json, text/javascript, */*; q=0.01",
+        "traceId": "F-0019ec2f8e9a4VVWlUX6gm",
+        "token": "hhc7ZJOBMhxqRcVs"
+      }
+    },
+    {
+      "method": "GET",
+      "url": "https://www.zhipin.com/wapi/zppassport/get/wt",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "https://www.zhipin.com/",
+        "sec-ch-ua": "\"Google Chrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "zp_token": "V2R9snFOD521lqVtRuxxwRISmw7Drfxy8~|R9snFOD521lqVtRuxxwRISmw7DrSzS4~",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "Accept": "application/json, text/plain, */*",
+        "traceId": "F-f8e9b7sEkR1onvIT"
+      }
+    },
+    {
+      "method": "POST",
+      "url": "https://www.zhipin.com/wapi/zpApm/actionLog/fe/common.json",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "https://www.zhipin.com/",
+        "sec-ch-ua": "\"Google Chrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "zp_token": "V2R9snFOD521lqVtRuxxwRISmw7Drfxy8~|R9snFOD521lqVtRuxxwRISmw7DrSzS4~",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "Accept": "application/json, text/plain, */*",
+        "traceId": "F-f8eab5V2UYDSoIRY",
+        "Content-Type": "application/json"
+      },
+      "postData": "{\"identity\":1,\"clientInfo\":{\"os\":\"Windows\",\"model\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\",\"screen\":\"{\\\"width\\\":2560,\\\"height\\\":1440}\",\"version\":\"10\",\"network\":\"{\\\"networkInfo\\\":\\\"{\\\\\\\"effectiveType\\\\\\\":\\\\\\\"4g\\\\\\\",\\\\\\\"downlink\\\\\\\":1.6,\\\\\\\"rtt\\\\\\\":100,\\\\\\\"saveData\\\\\\\":false}\\\",\\\"networkType\\\":\\\"4g\\\",\\\"operator\\\":\\\"\\\"}\"},\"items\":[{\"action\":\"action_geek_chat_monitor\",\"p\":\"{\\\"appKey\\\":\\\"GhEbsoj2fop2hkZO\\\",\\\"time\\\":178138755346"
+    }
+  ],
+  "ws": []
+}
