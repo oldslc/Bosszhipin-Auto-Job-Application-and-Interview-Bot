@@ -15,6 +15,10 @@ data/logs/
 logs/
 *.log
 
+# 数据缓存
+data/chat_capture.json
+data/h5_apis_*.json
+
 # 敏感配置
 .api_key
 .api_key.backup
