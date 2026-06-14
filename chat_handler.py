@@ -144,7 +144,7 @@ class ChatHandler:
         user_prompt = self._build_prompt(conversation, new_message)
         system_prompt = (
             "你是一个正在找工作的求职者，正在Boss直聘求职端上与HR进行在线对话。"
-            "你叫丁雨阳，有机电一体化背景和AI自学经历，"
+            "你叫[姓名]，有[专业背景]和AI自学经历，"
             "正在寻找AI应用开发/Agent开发相关岗位。"
             "请用自然、专业但不失亲切的语气回复，"
             "展现求职者的积极性和学习能力。"
@@ -155,13 +155,55 @@ class ChatHandler:
         return reply
 
     # ----------------------------------------------------------
-    # 发送回复到页面
+    # 发送回复
     # ----------------------------------------------------------
-    def send_reply(self, text: str) -> bool:
+    def send_reply(self, text: str, to_uid: int = None,
+                   to_encrypt_uid: str = None, mqtt_client=None) -> bool:
         """
-        通过浏览器在 Boss 直聘求职者页面发送消息
-        返回是否成功
+        发送回复消息。
+
+        支持两种模式：
+        1. MQTT 模式：如果传入了 mqtt_client，通过 BOSSChatMQTT.send_message() 发送
+        2. 浏览器模式：否则使用 browser 在 Boss 直聘页面中发送
+
+        参数:
+            text: 消息文本
+            to_uid: MQTT 模式下的对方用户 ID
+            to_encrypt_uid: MQTT 模式下的对方 encryptUid
+            mqtt_client: MQTT 客户端实例（BOSSChatMQTT 对象），不为 None 时走 MQTT 模式
+
+        返回:
+            bool: 是否发送成功
         """
+        # MQTT 模式
+        if mqtt_client is not None:
+            if not to_uid:
+                logger.error("MQTT 模式缺少 to_uid")
+                return False
+            try:
+                # 随机延迟，模拟真人
+                delay = random.uniform(config.REPLY_DELAY_MIN, config.REPLY_DELAY_MAX)
+                logger.debug(f"MQTT 延迟 {delay:.1f} 秒后发送...")
+                time.sleep(delay)
+
+                success = mqtt_client.send_message(
+                    to_uid=to_uid,
+                    to_encrypt_uid=to_encrypt_uid or '',
+                    text=text,
+                    to_source=0
+                )
+                if success:
+                    logger.info(f"[MQTT] 已发送回复: {text[:50]}...")
+                    self._record_reply()
+                    return True
+                else:
+                    logger.error("[MQTT] 发送消息失败")
+                    return False
+            except Exception as e:
+                logger.error(f"[MQTT] 发送回复异常: {e}")
+                return False
+
+        # 浏览器模式（原有逻辑）
         try:
             page = self.browser.get_page()
             if not page:
@@ -170,7 +212,7 @@ class ChatHandler:
 
             # 随机延迟，模拟真人
             delay = random.uniform(config.REPLY_DELAY_MIN, config.REPLY_DELAY_MAX)
-            logger.debug(f"延迟 {delay:.1f} 秒后发送...")
+            logger.debug(f"浏览器延迟 {delay:.1f} 秒后发送...")
             time.sleep(delay)
 
             # 模拟鼠标移动
@@ -184,7 +226,6 @@ class ChatHandler:
                 input_box.click()
                 time.sleep(random.uniform(0.3, 0.8))
 
-                # 使用 JavaScript 设置文本（兼容 contenteditable）
                 # 使用 JavaScript 设置文本（兼容 contenteditable）
                 page.evaluate(
                     f"""
@@ -222,7 +263,7 @@ class ChatHandler:
                 return False
 
         except Exception as e:
-            logger.error(f"发送回复失败: {e}")
+            logger.error(f"浏览器发送回复失败: {e}")
             return False
 
     # ----------------------------------------------------------

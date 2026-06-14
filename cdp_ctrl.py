@@ -38,7 +38,7 @@ def main():
     screenshot_b64 = r['data']
     
     # 保存截图
-    out_path = sys.argv[2] if len(sys.argv) > 2 else '/mnt/c/Users/27871/OneDrive/Desktop/boss_shot.png'
+    out_path = sys.argv[2] if len(sys.argv) > 2 else '/tmp/boss_shot.png'
     import base64
     with open(out_path, 'wb') as f:
         f.write(base64.b64decode(screenshot_b64))

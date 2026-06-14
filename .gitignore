@@ -1,8 +1,44 @@
-# Chrome 浏览器数据
-.browser_data/
+# Python
 __pycache__/
-venv/
 *.pyc
 *.pyo
+venv/
+.env
+
+# 数据
+data/cookie.txt
+data/conversations/
+data/delivered.json
 data/logs/
+
+# 日志
+logs/
+*.log
+
+# 敏感配置
+.api_key
+.api_key.backup
+
+# IDE
+.vscode/
+.idea/
+
+# 进程管理
+.agent.pid
 agent.pid
+
+# 构建产物
+dist/
+build/
+*.spec
+boss-agent
+boss-agent-pkg/
+启动面板.bat
+面板.bat
+
+# Chrome
+.browser_data/
+
+# OS
+.DS_Store
+Thumbs.db

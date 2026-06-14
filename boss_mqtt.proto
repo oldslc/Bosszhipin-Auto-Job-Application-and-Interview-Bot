@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package boss;
+
+message TechwolfUser {
+  int64 uid = 1;
+  string name = 2;
+  int32 source = 7;
+}
+
+message TechwolfMessageBody {
+  int32 type = 1;
+  int32 templateId = 2;
+  string text = 3;
+}
+
+message TechwolfMessage {
+  TechwolfUser from = 1;
+  TechwolfUser to = 2;
+  int32 type = 3;
+  int64 mid = 4;
+  TechwolfMessageBody body = 6;
+  int64 cmid = 11;
+}
+
+message TechwolfChatProtocol {
+  int32 type = 1;
+  repeated TechwolfMessage messages = 3;
+}

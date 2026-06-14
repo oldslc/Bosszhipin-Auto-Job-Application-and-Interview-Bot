@@ -31,7 +31,7 @@ def run(url):
     print(f"BODY:\n{r['result']['value']}")
     
     r = cmd('Page.captureScreenshot', {'format': 'png'})
-    with open('/mnt/c/Users/27871/OneDrive/Desktop/boss_check.png', 'wb') as f:
+    with open('/tmp/boss_check.png', 'wb') as f:
         f.write(base64.b64decode(r['data']))
     print(f"\nScreenshot saved")
     
