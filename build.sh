@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# BOSS 直聘全自动面试智能体 - 打包脚本
+# BOSS 直聘全自动投递面试智能体 - 打包脚本
 # 用法: bash build.sh
 
 set -e
@@ -10,7 +10,7 @@ DIST_DIR="dist/$APP_NAME"
 VERSION=$(date +%Y%m%d)
 
 echo "╔══════════════════════════════════════════════╗"
-echo "║  BOSS 直聘全自动面试智能体 - 打包脚本        ║"
+echo "║  BOSS 直聘全自动投递面试智能体 - 打包脚本        ║"
 echo "╚══════════════════════════════════════════════╝"
 
 # 1. 清理敏感信息
@@ -105,7 +105,7 @@ cp "dist/$APP_NAME" "$DIST_DIR/"
 cat > "$DIST_DIR/启动面板.bat" << 'BAT'
 @echo off
 chcp 65001 >nul
-echo BOSS 直聘全自动面试智能体
+echo BOSS 直聘全自动投递面试智能体
 echo ============================
 echo.
 echo 启动中，请稍候...
@@ -123,7 +123,7 @@ BAT
 # 创建 Linux 启动脚本
 cat > "$DIST_DIR/start.sh" << 'SH'
 #!/usr/bin/env bash
-echo "BOSS 直聘全自动面试智能体"
+echo "BOSS 直聘全自动投递面试智能体"
 echo ""
 echo "启动中..."
 ./boss-agent &
@@ -137,7 +137,7 @@ chmod +x "$DIST_DIR/start.sh"
 
 # 创建 README
 cat > "$DIST_DIR/README.txt" << 'README'
-BOSS 直聘全自动面试智能体
+BOSS 直聘全自动投递面试智能体
 =========================
 
 功能:

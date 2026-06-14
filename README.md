@@ -1,4 +1,4 @@
-# 🤖 BOSS 直聘全自动面试智能体
+# 🤖 BOSS 直聘全自动投递面试智能体
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue)](https://python.org)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
